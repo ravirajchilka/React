@@ -22,13 +22,13 @@ function AddItem() {
         <div>
           {/* <TextField ref={inputRef}  className='textCl mr10'  label="Add Item" variant="outlined"
                /> */}
-          <input
+          <textarea
             ref={inputRef}
             placeholder="Add Item"
             className="textCl mr10"
             style={{ height: "40px" }}
-          ></input>
-          <Button className="mt10" variant="contained" onClick={addItem}>
+          ></textarea>
+          <Button className="m44" variant="contained" onClick={addItem}>
             Add Item
           </Button>
         </div>
