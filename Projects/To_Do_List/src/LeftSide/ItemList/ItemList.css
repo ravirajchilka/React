@@ -4,11 +4,6 @@
     width: 300px;
 }
 
-.dispFlexCl {
-    display: flex;
-}
-
-
 .borderCl {
     border: 1px solid gray;
 }
