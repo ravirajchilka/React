@@ -10,10 +10,6 @@ function ItemList(props) {
 
   const [selectedDateAndTime, setSelectedDateAndTime] = useState({date:"",time:""});
 
-  const handleClick = () => {
-    console.log(selectedDateAndTime);
-    setData(selectedDateAndTime); // Pass the entire item object
-  };
 
  const handleChange = (e) => {
     const {name,value} = e.target;
@@ -29,7 +25,7 @@ function ItemList(props) {
       
       <div className="mt10 gridCl" key={Math.random()}>
        
-        <div className="m5" onClick={setData(JSON.stringify(selectedDateAndTime))}>
+        <div className="m5" onClick={setData(selectedDateAndTime)}>
           <div className="mr10 width100cl mb10">
             <p>{ind+1}. {item.length>10?(item.slice(0,30)+"..."):item}</p>
           </div>
